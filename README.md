@@ -52,8 +52,30 @@ On Windows: `%APPDATA%/Claude/claude_desktop_config.json`
 ```json
 {
   "mcpServers": {
-    "	linux-server": {
+    "linux-server": {
       "command": "/path/to/	linux-server/build/index.js"
+    }
+  }
+}
+```
+```json
+{
+  "mcpServers": {
+    "linux-server": {
+      "disabled": false,
+      "timeout": 60,
+      "type": "stdio",
+      "command": "node",
+      "args": [
+        "/path/to/linux-server/build/index.js"
+      ],
+      "env": {
+        "SSH_HOST": "1270.0.0.1",
+        "SSH_PORT": "22",
+        "SSH_USERNAME": "root",
+        "SSH_PRIVATE_KEY_PATH": "/path/to/xxxxxxx.pem",
+        "SSH_PASSPHRASE": "password(optional)"
+      }
     }
   }
 }
