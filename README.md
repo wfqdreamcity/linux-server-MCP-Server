@@ -53,15 +53,6 @@ On Windows: `%APPDATA%/Claude/claude_desktop_config.json`
 {
   "mcpServers": {
     "linux-server": {
-      "command": "/path/to/	linux-server/build/index.js"
-    }
-  }
-}
-```
-```json
-{
-  "mcpServers": {
-    "linux-server": {
       "disabled": false,
       "timeout": 60,
       "type": "stdio",
